@@ -1,0 +1,8 @@
+name: "cuddlyparakeet"
+description: "only for testing purpose"
+
+runs:
+  using: composite
+  steps:
+    - run: go run .
+      shell: bash
