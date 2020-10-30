@@ -23,3 +23,5 @@ jobs:
 
       - name: Test
         uses: ldez/cuddlyparakeet@v1.0.0
+        with:
+          t: foo
