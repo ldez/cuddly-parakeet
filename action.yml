@@ -1,8 +1,15 @@
 name: "cuddlyparakeet"
 description: "only for testing purpose"
 
+inputs:
+  t:
+    description: 'cli args'
+    required: false
+    default: test
+
 runs:
   using: composite
   steps:
-    - run: go run .
+    - run: go run . -t ${{ inputs.t }}
       shell: bash
+
